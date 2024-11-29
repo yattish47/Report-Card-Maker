@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Darker text for better readability */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing */
+}
+
+input, select, textarea {
+ 
+    padding: 15px; /* Increased padding for larger input fields */
+    font-size: 16px; /* Larger font size for better readability */
+    border: 2px solid #ccc; /* Border for better visibility */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 15px; /* Increased padding for buttons */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for buttons */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#studentList {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff; /* White background for the student list */
+    border-radius: 5px; /* Rounded corners for the list */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    input, select, textarea, button {
+        font-size: 14px; /* Slightly smaller font size for mobile */
+        padding: 12px; /* Adjusted padding for mobile */
+    }
+}

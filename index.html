@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindergarten Report Card Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kindergarten Report Card Manager</h1>
+    <form id="reportForm">
+        <select id="class" required>
+            <option value="">Select Class</option>
+            <option value="Beta">Beta</option>
+            <option value="Alpha">Alpha</option>
+            <option value="Omega">Omega</option>
+        </select>
+        <input type="text" id="name" placeholder="Student Name" required>
+        <select id="sex" required>
+            <option value="">Select Sex</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <textarea id="report" placeholder="Report Card Details" required></textarea>
+        <button type="submit">Add Student</button>
+    </form>
+    <div id="studentList"></div>
+    <button id="exportBtn" style="display: none;">Export to Word</button>
+    <script src="script.js"></script>
+</body>
+</html>
