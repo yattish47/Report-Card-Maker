@@ -121,7 +121,7 @@ exportBtn.addEventListener('click', function() {
     const blob = new Blob([content], { type: 'application/msword' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'report_cards.docx';
+    link.download = 'report_cards.doc';
     link.click();
 });
 updateStudentList();
